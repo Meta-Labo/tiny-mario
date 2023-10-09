@@ -5,22 +5,73 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
+        . . . . 2 2 2 2 2 e . . . . . . 
+        . . . 2 2 2 2 d 2 2 e . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        . . e 2 2 2 2 2 e f f c c . . . 
+        . . e e 2 2 e f f f f b c . . . 
+        . e e e f e 2 b f f f d c . . . 
+        e e 2 2 d f 2 1 1 1 1 b c . . . 
+        e e 2 2 d f e e c c c . . . . . 
+        b 1 1 d e 2 2 e e c . . . . . . 
+        . f f e 2 2 2 2 e . . . . . . . 
+        . . f f d d 2 2 f f d d . . . . 
+        . . f f d d e e f f d d . . . . 
+        . . . f f f f . . . . . . . . . 
+        . . e e e f f f . . . . . . . . 
+        . . e e e e f f f . . . . . . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
+        . . . . . . 2 2 2 2 2 e . . . . 
+        . . . . . 2 2 2 2 d 2 2 e . . . 
+        . . . . e 2 2 2 2 2 2 2 e . . . 
+        . . . . e 2 2 2 2 2 2 2 e . . . 
+        . . . . e 2 2 2 2 2 e f f c c . 
+        . . . . e e 2 2 e f f f f b c . 
+        . . . e e e f e 2 b f f f d c . 
+        . . e e 2 2 d f 2 1 1 1 1 b c . 
+        . . e e 2 2 d f e e c c c . . . 
+        . . b 1 1 d e 2 e e c . . . . . 
+        . . f f f f d d f . . . . . . . 
+        f f f f f f d d . . . . . . . . 
+        f f f . f f f e . . . . . . . . 
+        f f . . . . e e e . . . . . . . 
+        . . . . . . e e e e . . . . . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
+        . . . . . . 2 2 2 2 2 e . . . . 
+        . . . . . 2 2 2 2 d 2 2 e . . . 
+        . . . . e 2 2 2 2 2 2 2 e . . . 
+        . . . . e 2 2 2 2 2 2 2 e . . . 
+        . . . . e 2 2 2 2 2 e f f c c . 
+        . . . . e e 2 2 e f f f f b c . 
+        . . e e e f e 2 2 b f f f d c . 
+        . e e 2 2 d f e 2 1 1 1 1 b c . 
+        . e e 2 2 d f e e e c c c . . . 
+        . b 1 1 e e 2 2 e e c . . . . . 
+        . . f d d 2 2 2 f f f d d . . . 
+        e e f d d e e e . f f d d . . . 
+        e e e f f f f f . . . . . . . . 
+        e e . . . . f f f . . . . . . . 
+        . . . . . . f f f f . . . . . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . . . . . 2 2 2 2 2 e . . . 
+        . . . . . . 2 2 2 2 d 2 2 e . . 
+        . . . . . e 2 2 2 2 2 2 2 e . . 
+        . . . . . e 2 2 2 2 2 2 2 e . . 
+        . . . . . e 2 2 2 2 2 e f f c c 
+        . . . . . e e 2 2 e f f f f b c 
+        . . . e e e f e 2 2 b f f f d c 
+        . . e e 2 2 d f e 2 1 1 1 1 b c 
+        . . e e 2 2 d f e e e c c c . . 
+        . . b 1 1 d e 2 2 e e c . . . . 
+        . . . f f f d d 2 2 f d d . . . 
+        . . . . f f d d e e f d d . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . e e e f f . . . . . . . 
+        . . . . e e e e f f . . . . . . 
         `],
     100,
     true
@@ -42,22 +93,22 @@ function hit (point: number, mySpriteA: Sprite, mySpriteB: Sprite) {
 controller.right.onEvent(ControllerButtonEvent.Released, function () {
     animation.stopAnimation(animation.AnimationTypes.All, mySprite)
     mySprite.setImage(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . . 2 2 2 2 2 e . . . . . . 
+        . . . 2 2 2 2 d 2 2 e . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        . . e 2 2 2 2 2 e f f c c . . . 
+        . . e e 2 2 e f f f f b c . . . 
+        . e e e f e 2 b f f f d c . . . 
+        e e 2 2 d f 2 1 1 1 1 b c . . . 
+        e e 2 2 d f e e c c c . . . . . 
+        b 1 1 d e 2 2 e e c . . . . . . 
+        . f f e 2 2 2 2 e . . . . . . . 
+        . . f f d d 2 2 f f d d . . . . 
+        . . f f d d e e f f d d . . . . 
+        . . . f f f f . . . . . . . . . 
+        . . e e e f f f . . . . . . . . 
+        . . e e e e f f f . . . . . . . 
         `)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
@@ -68,22 +119,73 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
+        . . . . . . e 2 2 2 2 2 . . . . 
+        . . . . . e 2 2 d 2 2 2 2 . . . 
+        . . . . . e 2 2 2 2 2 2 2 e . . 
+        . . . . . e 2 2 2 2 2 2 2 e . . 
+        . . . c c f f e 2 2 2 2 2 e . . 
+        . . . c b f f f f e 2 2 e e . . 
+        . . . c d f f f b 2 e f e e e . 
+        . . . c b 1 1 1 1 2 f d 2 2 e e 
+        . . . . . c c c e e f d 2 2 e e 
+        . . . . . . c e e 2 2 e d 1 1 b 
+        . . . . . . . e 2 2 2 2 e f f . 
+        . . . . d d f f 2 2 d d f f . . 
+        . . . . d d f f e e d d f f . . 
+        . . . . . . . . . f f f f . . . 
+        . . . . . . . . f f f e e e . . 
+        . . . . . . . f f f e e e e . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
+        . . . . e 2 2 2 2 2 . . . . . . 
+        . . . e 2 2 d 2 2 2 2 . . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . c c f f e 2 2 2 2 2 e . . . . 
+        . c b f f f f e 2 2 e e . . . . 
+        . c d f f f b 2 e f e e e . . . 
+        . c b 1 1 1 1 2 f d 2 2 e e . . 
+        . . . c c c e e f d 2 2 e e . . 
+        . . . . . c e e 2 e d 1 1 b . . 
+        . . . . . . . f d d f f f f . . 
+        . . . . . . . . d d f f f f f f 
+        . . . . . . . . e f f f . f f f 
+        . . . . . . . e e e . . . . f f 
+        . . . . . . e e e e . . . . . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
+        . . . . e 2 2 2 2 2 . . . . . . 
+        . . . e 2 2 d 2 2 2 2 . . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . c c f f e 2 2 2 2 2 e . . . . 
+        . c b f f f f e 2 2 e e . . . . 
+        . c d f f f b 2 2 e f e e e . . 
+        . c b 1 1 1 1 2 e f d 2 2 e e . 
+        . . . c c c e e e f d 2 2 e e . 
+        . . . . . c e e 2 2 e e 1 1 b . 
+        . . . d d f f f 2 2 2 d d f . . 
+        . . . d d f f . e e e d d f e e 
+        . . . . . . . . f f f f f e e e 
+        . . . . . . . f f f . . . . e e 
+        . . . . . . f f f f . . . . . . 
+        `,img`
         . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . e 2 2 2 2 2 . . . . . . . 
+        . . e 2 2 d 2 2 2 2 . . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        . . e 2 2 2 2 2 2 2 e . . . . . 
+        c c f f e 2 2 2 2 2 e . . . . . 
+        c b f f f f e 2 2 e e . . . . . 
+        c d f f f b 2 2 e f e e e . . . 
+        c b 1 1 1 1 2 e f d 2 2 e e . . 
+        . . c c c e e e f d 2 2 e e . . 
+        . . . . c e e 2 2 e d 1 1 b . . 
+        . . . d d f 2 2 d d f f f . . . 
+        . . . d d f e e d d f f . . . . 
+        . . . . . . f f f f f . . . . . 
+        . . . . . . . f f e e e . . . . 
+        . . . . . . f f e e e e . . . . 
         `],
     100,
     true
@@ -100,21 +202,21 @@ controller.left.onEvent(ControllerButtonEvent.Released, function () {
     animation.stopAnimation(animation.AnimationTypes.All, mySprite)
     mySprite.setImage(img`
         . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . . e 2 2 2 2 2 . . . . . . 
+        . . . e 2 2 d 2 2 2 2 . . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . . . e 2 2 2 2 2 2 2 e . . . . 
+        . c c f f e 2 2 2 2 2 e . . . . 
+        . c b f f f f e 2 2 e e . . . . 
+        . c d f f f b 2 2 e f e e e . . 
+        . c b 1 1 1 1 2 e f d 2 2 e e . 
+        . . . c c c e e e f d 2 2 e e . 
+        . . . . . c e e 2 2 e e 1 1 b . 
+        . . . d d f f f 2 2 2 d d f . . 
+        . . . d d f f . e e e d d f e e 
+        . . . . . . . . f f f f f e e e 
+        . . . . . . . f f f . . . . e e 
+        . . . . . . f f f f . . . . . . 
         `)
 })
 function gameOver () {
@@ -202,26 +304,26 @@ let mySprite: Sprite = null
 let muteki = 0
 muteki = 0
 scene.setBackgroundColor(9)
-tiles.setCurrentTilemap(tilemap`レベル1`)
+tiles.setCurrentTilemap(tilemap`レベル2`)
 let mapWidth = tiles.tilemapColumns() * tiles.tileWidth()
 console.logValue("width", mapWidth)
 mySprite = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
+    . . . . 2 2 2 2 2 e . . . . . . 
+    . . . 2 2 2 2 d 2 2 e . . . . . 
+    . . e 2 2 2 2 2 2 2 e . . . . . 
+    . . e 2 2 2 2 2 2 2 e . . . . . 
+    . . e 2 2 2 2 2 e f f c c . . . 
+    . . e e 2 2 e f f f f b c . . . 
+    . e e e f e 2 b f f f d c . . . 
+    e e 2 2 d f 2 1 1 1 1 b c . . . 
+    e e 2 2 d f e e c c c . . . . . 
+    b 1 1 d e 2 2 e e c . . . . . . 
+    . f f e 2 2 2 2 e . . . . . . . 
+    . . f f d d 2 2 f f d d . . . . 
+    . . f f d d e e f f d d . . . . 
+    . . . f f f f . . . . . . . . . 
+    . . e e e f f f . . . . . . . . 
+    . . e e e e f f f . . . . . . . 
     `, SpriteKind.Player)
 mySprite.setPosition(51, 14)
 controller.moveSprite(mySprite, 50, 0)
@@ -229,47 +331,47 @@ let xScroll = scene.screenWidth() / 3
 jumpN = 1
 for (let value of tiles.getTilesByType(sprites.swamp.swampTile3)) {
     temporary = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . . c c c c c c . . . . . . 
+        . . . c 6 7 7 7 7 6 c . . . . . 
+        . . c 7 7 7 7 7 7 7 7 c . . . . 
+        . c 6 7 7 7 7 7 7 7 7 6 c . . . 
+        . c 7 c 6 6 6 6 c 7 7 7 c . . . 
+        . f 7 6 f 6 6 f 6 7 7 7 f . . . 
+        . f 7 7 7 7 7 7 7 7 7 7 f . . . 
+        . . f 7 7 7 7 6 c 7 7 6 f c . . 
+        . . . f c c c c 7 7 6 f 7 7 c . 
+        . . c 7 2 7 7 7 6 c f 7 7 7 7 c 
+        . c 7 7 2 7 7 c f c 6 7 7 6 c c 
+        c 1 1 1 1 7 6 f c c 6 6 6 c . . 
+        f 1 1 1 1 1 6 6 c 6 6 6 6 f . . 
+        f 6 1 1 1 1 1 6 6 6 6 6 c f . . 
+        . f 6 1 1 1 1 1 1 6 6 6 f . . . 
+        . . c c c c c c c c c f . . . . 
         `, SpriteKind.enemyYoko)
     tiles.placeOnTile(temporary, value)
     temporary.setVelocity(-50, 0)
 }
-for (let value2 of tiles.getTilesByType(sprites.dungeon.collectibleRedCrystal)) {
+for (let value of tiles.getTilesByType(sprites.dungeon.collectibleRedCrystal)) {
     temporary = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . f f f . . . . . . . . . . . 
+        f f f c c . . . . . . . . f f f 
+        f f c c c . c c . . . f c b b c 
+        f f c 3 c c 3 c c f f b b b c . 
+        f f c 3 b c 3 b c f b b c c c . 
+        f c b b b b b b c f b c b c c . 
+        c c 1 b b b 1 b c b b c b b c . 
+        c b b b b b b b b b c c c b c . 
+        c b 1 f f 1 c b b c c c c c . . 
+        c f 1 f f 1 f b b b b f c . . . 
+        f f f f f f f b b b b f c . . . 
+        f f 2 2 2 2 f b b b b f c c . . 
+        . f 2 2 2 2 2 b b b c f . . . . 
+        . . f 2 2 2 b b b c f . . . . . 
+        . . . f f f f f f f . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
-    tiles.setTileAt(value2, assets.tile`transparency16`)
-    tiles.placeOnTile(temporary, value2)
+    tiles.setTileAt(value, assets.tile`transparency16`)
+    tiles.placeOnTile(temporary, value)
     temporary.setBounceOnWall(true)
     temporary.setVelocity(0, 53)
 }
